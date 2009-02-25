@@ -4,7 +4,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |s|
     s.name = "utter"
-    s.summary = %Q{TODO}
+    s.summary = %Q{An instant deployment solution for using Github webhooks to generate jekyll sites}
     s.email = "steve.tooke@gmail.com"
     s.homepage = "http://github.com/tooky/utter"
     s.description = "TODO"

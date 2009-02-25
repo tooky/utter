@@ -1,9 +1,8 @@
-Feature: something something
-  In order to something something
-  A user something something
-  something something something
+Feature: Regenerate an existing site
+  In order to deploy the latest version
+  A user can regenerate the site
 
   Scenario: something something
-    Given inspiration
-    When I create a sweet new gem
-    Then everyone should see how awesome I am
+    Given the application key 'xxxxxxxx'
+    When I call regenerate
+    Then jekyll will process './source' to './destination'
