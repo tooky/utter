@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Steve Tooke"]
   s.date = %q{2009-02-26}
-  s.description = %q{TODO}
+  s.description = %q{Simple instant deployment for jekyll websites}
   s.email = %q{steve.tooke@gmail.com}
   s.files = ["VERSION.yml", "lib/utter", "lib/utter/application.rb", "lib/utter/site.rb", "lib/utter.rb", "test/site_test.rb", "test/test_helper.rb", "test/utter_test.rb"]
   s.has_rdoc = true

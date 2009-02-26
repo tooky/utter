@@ -7,7 +7,7 @@ begin
     s.summary = %Q{An instant deployment solution for using Github webhooks to generate jekyll sites}
     s.email = "steve.tooke@gmail.com"
     s.homepage = "http://github.com/tooky/utter"
-    s.description = "TODO"
+    s.description = "Simple instant deployment for jekyll websites"
     s.authors = ["Steve Tooke"]
   end
 rescue LoadError
