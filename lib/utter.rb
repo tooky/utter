@@ -6,6 +6,7 @@ require 'digest/sha1'
 DB = Sequel.connect(ENV['DATABASE_URL'] || 'sqlite://utter.db')
 
 require 'utter/site'
+require 'utter/application'
 
 module Utter
   Site.make_table

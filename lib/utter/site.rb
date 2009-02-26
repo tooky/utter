@@ -7,7 +7,8 @@ module Utter
     end
   
     def regenerate
-      Jekyll.process(self[:source], self[:destination])
+      self.update
+      Jekyll.process(self[:source], self[:destination]) if source_exists?
     end
   
     def source_exists?
@@ -17,6 +18,13 @@ module Utter
     def clone
       unless source_exists?
         Git.clone self[:repo], self[:source]
+      end
+    end
+    
+    def update
+      if source_exists?
+        g = Git.open self[:source]
+        g.pull 
       end
     end
     
