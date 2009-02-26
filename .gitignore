@@ -3,3 +3,4 @@
 coverage
 *.db
 temp.ru
+pkg/
